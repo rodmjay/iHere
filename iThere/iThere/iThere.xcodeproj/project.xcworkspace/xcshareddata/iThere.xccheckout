@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>DBD933A1-FF19-4B08-81FF-923B16E547BE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iThere</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F4AE390F4FA80701BA714DFDE9F97B32D0D01D50</key>
 		<string>https://github.com/rodmjay/iHere.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iThere/iThere/iThere.xcodeproj/project.xcworkspace</string>
+	<string>iThere/iThere/iThere.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F4AE390F4FA80701BA714DFDE9F97B32D0D01D50</key>

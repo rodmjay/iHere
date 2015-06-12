@@ -10,6 +10,8 @@ import UIKit
 
 class BeaconTableViewController: UITableViewController {
 
+    var beacons = [BeaconInfo]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +20,11 @@ class BeaconTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        var newBeacon = BeaconInfo(uuid:"asdf")
+        beacons.append(newBeacon)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,24 +37,23 @@ class BeaconTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return beacons.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("beaconCell", forIndexPath: indexPath) as! UITableViewCell
 
-        // Configure the cell...
+        var currentBeacon = beacons[indexPath.row]
+        cell.textLabel?.text = currentBeacon.uuid
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -84,14 +90,18 @@ class BeaconTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        var nextView = segue.destinationViewController as! DetailsViewController
+        if let indexPath = self.tableView.indexPathForSelectedRow(){
+            let selectedBeacon = beacons[indexPath.row]
+            nextView.currentBeaconInfo = selectedBeacon
+        }
     }
-    */
+
 
 }

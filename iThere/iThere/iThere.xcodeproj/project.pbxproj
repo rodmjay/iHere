@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0DC7751B2B839C00431078 /* BeaconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC7741B2B839C00431078 /* BeaconTableViewController.swift */; };
+		CA0DC7771B2B83E300431078 /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC7761B2B83E300431078 /* BeaconInfo.swift */; };
+		CA0DC77B1B2B872800431078 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC77A1B2B872800431078 /* DetailsViewController.swift */; };
 		CA3BB4191B29EB3400DFB093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BB4181B29EB3400DFB093 /* AppDelegate.swift */; };
-		CA3BB41B1B29EB3400DFB093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BB41A1B29EB3400DFB093 /* ViewController.swift */; };
 		CA3BB41E1B29EB3400DFB093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB41C1B29EB3400DFB093 /* Main.storyboard */; };
 		CA3BB4201B29EB3400DFB093 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB41F1B29EB3400DFB093 /* Images.xcassets */; };
 		CA3BB4231B29EB3400DFB093 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB4211B29EB3400DFB093 /* LaunchScreen.xib */; };
@@ -26,10 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA0DC7741B2B839C00431078 /* BeaconTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTableViewController.swift; sourceTree = "<group>"; };
+		CA0DC7761B2B83E300431078 /* BeaconInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
+		CA0DC77A1B2B872800431078 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = ../DetailsViewController.swift; sourceTree = "<group>"; };
 		CA3BB4131B29EB3400DFB093 /* iThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3BB4171B29EB3400DFB093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3BB4181B29EB3400DFB093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA3BB41A1B29EB3400DFB093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CA3BB41D1B29EB3400DFB093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA3BB41F1B29EB3400DFB093 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA3BB4221B29EB3400DFB093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -77,12 +81,14 @@
 		CA3BB4151B29EB3400DFB093 /* iThere */ = {
 			isa = PBXGroup;
 			children = (
+				CA0DC77A1B2B872800431078 /* DetailsViewController.swift */,
 				CA3BB4181B29EB3400DFB093 /* AppDelegate.swift */,
-				CA3BB41A1B29EB3400DFB093 /* ViewController.swift */,
 				CA3BB41C1B29EB3400DFB093 /* Main.storyboard */,
+				CA0DC7761B2B83E300431078 /* BeaconInfo.swift */,
 				CA3BB41F1B29EB3400DFB093 /* Images.xcassets */,
 				CA3BB4211B29EB3400DFB093 /* LaunchScreen.xib */,
 				CA3BB4161B29EB3400DFB093 /* Supporting Files */,
+				CA0DC7741B2B839C00431078 /* BeaconTableViewController.swift */,
 			);
 			path = iThere;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3BB41B1B29EB3400DFB093 /* ViewController.swift in Sources */,
 				CA3BB4191B29EB3400DFB093 /* AppDelegate.swift in Sources */,
+				CA0DC7751B2B839C00431078 /* BeaconTableViewController.swift in Sources */,
+				CA0DC7771B2B83E300431078 /* BeaconInfo.swift in Sources */,
+				CA0DC77B1B2B872800431078 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				CA3BB4341B29EB3400DFB093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA3BB4351B29EB3400DFB093 /* Build configuration list for PBXNativeTarget "iThereTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				CA3BB4371B29EB3400DFB093 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,9 +10,13 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    var currentBeaconInfo : BeaconInfo?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = currentBeaconInfo!.uuid
+        
         // Do any additional setup after loading the view.
     }
 
