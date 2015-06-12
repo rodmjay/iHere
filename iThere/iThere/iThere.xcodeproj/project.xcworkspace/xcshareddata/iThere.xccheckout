@@ -5,40 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-<<<<<<< HEAD
-	<string>7DD76C4D-5BDD-4C85-80EF-A35841D877FA</string>
+	<string>DBD933A1-FF19-4B08-81FF-923B16E547BE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>project</string>
-	<key>IDESourceControlProjectOriginsDictionary</key>
-	<dict>
-		<key>F4AE390F4FA80701BA714DFDE9F97B32D0D01D50</key>
-		<string>https://github.com/Larson-Nathanial/iHere</string>
-	</dict>
-	<key>IDESourceControlProjectPath</key>
-	<string>iHere/iHere.xcodeproj/project.xcworkspace</string>
-=======
-	<string>67C3C5A1-8006-40A4-95CD-4BF3B0439974</string>
-	<key>IDESourceControlProjectName</key>
-	<string>iHere</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F4AE390F4FA80701BA714DFDE9F97B32D0D01D50</key>
 		<string>https://github.com/rodmjay/iHere.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iHere/iHere.xcodeproj</string>
->>>>>>> bc7e27c6c39dd9ab7e984d1d7c03a4071361afa7
+	<string>iThere/iThere/iThere.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F4AE390F4FA80701BA714DFDE9F97B32D0D01D50</key>
-		<string>../../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-<<<<<<< HEAD
-	<string>https://github.com/Larson-Nathanial/iHere</string>
-=======
 	<string>https://github.com/rodmjay/iHere.git</string>
->>>>>>> bc7e27c6c39dd9ab7e984d1d7c03a4071361afa7
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
