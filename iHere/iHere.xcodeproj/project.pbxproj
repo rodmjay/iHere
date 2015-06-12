@@ -13,6 +13,11 @@
 		F7F88AC31B29E8D200B41604 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F88AC21B29E8D200B41604 /* Images.xcassets */; };
 		F7F88AC61B29E8D200B41604 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F88AC41B29E8D200B41604 /* LaunchScreen.xib */; };
 		F7F88AD21B29E8D300B41604 /* iHereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F88AD11B29E8D300B41604 /* iHereTests.swift */; };
+		F7F88ADC1B29EE1400B41604 /* EnterInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F88ADB1B29EE1400B41604 /* EnterInformation.swift */; };
+		F7F88ADE1B29F86600B41604 /* StartStop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F88ADD1B29F86600B41604 /* StartStop.swift */; };
+		F7F88AE01B29FCDE00B41604 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F88ADF1B29FCDE00B41604 /* Settings.swift */; };
+		F7F88AE21B2A01F200B41604 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F88AE11B2A01F200B41604 /* CoreLocation.framework */; };
+		F7F88AE41B2A01F700B41604 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7F88AE31B2A01F700B41604 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		F7F88ACB1B29E8D300B41604 /* iHereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iHereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F88AD01B29E8D300B41604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7F88AD11B29E8D300B41604 /* iHereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHereTests.swift; sourceTree = "<group>"; };
+		F7F88ADB1B29EE1400B41604 /* EnterInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterInformation.swift; sourceTree = "<group>"; };
+		F7F88ADD1B29F86600B41604 /* StartStop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartStop.swift; sourceTree = "<group>"; };
+		F7F88ADF1B29FCDE00B41604 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F7F88AE11B2A01F200B41604 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F7F88AE31B2A01F700B41604 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F88AE41B2A01F700B41604 /* CoreBluetooth.framework in Frameworks */,
+				F7F88AE21B2A01F200B41604 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,8 @@
 		F7F88AAD1B29E8D200B41604 = {
 			isa = PBXGroup;
 			children = (
+				F7F88AE31B2A01F700B41604 /* CoreBluetooth.framework */,
+				F7F88AE11B2A01F200B41604 /* CoreLocation.framework */,
 				F7F88AB81B29E8D200B41604 /* iHere */,
 				F7F88ACE1B29E8D300B41604 /* iHereTests */,
 				F7F88AB71B29E8D200B41604 /* Products */,
@@ -79,6 +93,9 @@
 			children = (
 				F7F88ABB1B29E8D200B41604 /* AppDelegate.swift */,
 				F7F88ABD1B29E8D200B41604 /* ViewController.swift */,
+				F7F88ADB1B29EE1400B41604 /* EnterInformation.swift */,
+				F7F88ADD1B29F86600B41604 /* StartStop.swift */,
+				F7F88ADF1B29FCDE00B41604 /* Settings.swift */,
 				F7F88ABF1B29E8D200B41604 /* Main.storyboard */,
 				F7F88AC21B29E8D200B41604 /* Images.xcassets */,
 				F7F88AC41B29E8D200B41604 /* LaunchScreen.xib */,
@@ -212,8 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F88ADC1B29EE1400B41604 /* EnterInformation.swift in Sources */,
 				F7F88ABE1B29E8D200B41604 /* ViewController.swift in Sources */,
+				F7F88ADE1B29F86600B41604 /* StartStop.swift in Sources */,
 				F7F88ABC1B29E8D200B41604 /* AppDelegate.swift in Sources */,
+				F7F88AE01B29FCDE00B41604 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
