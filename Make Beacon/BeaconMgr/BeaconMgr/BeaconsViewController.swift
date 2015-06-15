@@ -1,24 +1,31 @@
 //
-//  BeaconTableViewController.swift
-//  iThere
+//  BeaconsViewController.swift
+//  BeaconMgr
 //
 //  Created by Rod Johnson on 6/14/15.
 //  Copyright (c) 2015 Rod Johnson. All rights reserved.
 //
 
 import UIKit
+import CoreLocation
 
-class BeaconTableViewController: UITableViewController {
+class BeaconsViewController: UITableViewController, CLLocationManagerDelegate {
 
+    let locationManager = CLLocationManager()
+    let region = CLBeaconRegion(
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBarHidden = false;
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        locationManager.delegate = self
+        if(CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedWhenInUse){
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        
+       BeaconInfoManager.ScanBeacons()
+        self.title = "Beacons"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,24 +38,27 @@ class BeaconTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return BeaconInfoManager.beacons.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("beaconCell", forIndexPath: indexPath) as! BeaconCell
 
-        // Configure the cell...
-
+        var beacon = BeaconInfoManager.beacons[indexPath.item]
+        
+        cell.uuidLabel.text = beacon.uuid
+        cell.distanceLabel.text = beacon.getDistanceString()
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -85,14 +95,25 @@ class BeaconTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+     
+        var beaconId = self.tableView.indexPathForSelectedRow()
+        if((beaconId) != nil){
+            var theBeacon = BeaconInfoManager.beacons[beaconId!.item]
+        
+            var nextView = segue.destinationViewController as! BeaconViewController
+        
+            nextView.beacon = theBeacon
+        }
+        
+        
     }
-    */
+
 
 }

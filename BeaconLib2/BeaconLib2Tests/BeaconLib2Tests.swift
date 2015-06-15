@@ -1,15 +1,15 @@
 //
-//  iThereTests.swift
-//  iThereTests
+//  BeaconLib2Tests.swift
+//  BeaconLib2Tests
 //
-//  Created by Rod Johnson on 6/11/15.
+//  Created by Rod Johnson on 6/13/15.
 //  Copyright (c) 2015 Rod Johnson. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class iThereTests: XCTestCase {
+class BeaconLib2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -23,10 +23,6 @@ class iThereTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        
-       
-        
-        
         XCTAssert(true, "Pass")
     }
     

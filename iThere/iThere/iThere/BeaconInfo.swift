@@ -10,4 +10,9 @@ import Foundation
 
 struct BeaconInfo {
     var uuid : String?
+    var accountNumber : String?
+    var age : Int?
+    var gender : Int?
+    var distance : Float?
+    var payload : Int32?
 }

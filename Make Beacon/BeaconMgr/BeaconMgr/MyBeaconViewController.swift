@@ -1,23 +1,18 @@
 //
-//  DetailsViewController.swift
-//  iThere
+//  MyBeaconViewController.swift
+//  BeaconMgr
 //
-//  Created by Rod Johnson on 6/12/15.
+//  Created by Rod Johnson on 6/14/15.
 //  Copyright (c) 2015 Rod Johnson. All rights reserved.
 //
 
 import UIKit
 
-class DetailsViewController: UIViewController {
+class MyBeaconViewController: UIViewController {
 
-    var currentBeaconInfo : BeaconInfo?
-    var currentMember : Member?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = currentBeaconInfo?.accountNumber
-        
+        self.title = "My Beacon"
         // Do any additional setup after loading the view.
     }
 

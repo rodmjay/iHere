@@ -23,7 +23,7 @@ class StartStop: UIViewController, CBPeripheralManagerDelegate {
     
     
     
-    override init() {
+    init() {
         
         uuid = NSUUID(UUIDString: "2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6")
         major = 1234567891234567

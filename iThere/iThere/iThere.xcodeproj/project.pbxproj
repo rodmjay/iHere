@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA0DC7751B2B839C00431078 /* BeaconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC7741B2B839C00431078 /* BeaconTableViewController.swift */; };
 		CA0DC7771B2B83E300431078 /* BeaconInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC7761B2B83E300431078 /* BeaconInfo.swift */; };
 		CA0DC77B1B2B872800431078 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC77A1B2B872800431078 /* DetailsViewController.swift */; };
+		CA0DC77D1B2B8C7C00431078 /* BeaconListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC77C1B2B8C7C00431078 /* BeaconListViewController.swift */; };
+		CA0DC77F1B2B8D7000431078 /* BeaconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0DC77E1B2B8D7000431078 /* BeaconTableViewCell.swift */; };
 		CA3BB4191B29EB3400DFB093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BB4181B29EB3400DFB093 /* AppDelegate.swift */; };
 		CA3BB41E1B29EB3400DFB093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB41C1B29EB3400DFB093 /* Main.storyboard */; };
 		CA3BB4201B29EB3400DFB093 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB41F1B29EB3400DFB093 /* Images.xcassets */; };
 		CA3BB4231B29EB3400DFB093 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3BB4211B29EB3400DFB093 /* LaunchScreen.xib */; };
 		CA3BB42F1B29EB3400DFB093 /* iThereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3BB42E1B29EB3400DFB093 /* iThereTests.swift */; };
+		CAA2445E1B2BD764008FA22E /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2445D1B2BD764008FA22E /* Member.swift */; };
+		CAA244601B2BD877008FA22E /* MemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA2445F1B2BD877008FA22E /* MemberService.swift */; };
+		CAA244911B2C9BC6008FA22E /* BluetoothScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA244901B2C9BC6008FA22E /* BluetoothScanner.swift */; };
+		CAA244931B2DB8AF008FA22E /* BeaconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA244921B2DB8AF008FA22E /* BeaconTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,9 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CA0DC7741B2B839C00431078 /* BeaconTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTableViewController.swift; sourceTree = "<group>"; };
 		CA0DC7761B2B83E300431078 /* BeaconInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconInfo.swift; sourceTree = "<group>"; };
 		CA0DC77A1B2B872800431078 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = ../DetailsViewController.swift; sourceTree = "<group>"; };
+		CA0DC77C1B2B8C7C00431078 /* BeaconListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconListViewController.swift; sourceTree = "<group>"; };
+		CA0DC77E1B2B8D7000431078 /* BeaconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTableViewCell.swift; sourceTree = "<group>"; };
 		CA3BB4131B29EB3400DFB093 /* iThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3BB4171B29EB3400DFB093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3BB4181B29EB3400DFB093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		CA3BB4281B29EB3400DFB093 /* iThereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iThereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3BB42D1B29EB3400DFB093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA3BB42E1B29EB3400DFB093 /* iThereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iThereTests.swift; sourceTree = "<group>"; };
+		CAA2445D1B2BD764008FA22E /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		CAA2445F1B2BD877008FA22E /* MemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberService.swift; sourceTree = "<group>"; };
+		CAA244901B2C9BC6008FA22E /* BluetoothScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothScanner.swift; sourceTree = "<group>"; };
+		CAA244921B2DB8AF008FA22E /* BeaconTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BeaconTableViewController.swift; path = iThere/BeaconTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,7 @@
 		CA3BB40A1B29EB3400DFB093 = {
 			isa = PBXGroup;
 			children = (
+				CAA244921B2DB8AF008FA22E /* BeaconTableViewController.swift */,
 				CA3BB4151B29EB3400DFB093 /* iThere */,
 				CA3BB42B1B29EB3400DFB093 /* iThereTests */,
 				CA3BB4141B29EB3400DFB093 /* Products */,
@@ -81,14 +92,18 @@
 		CA3BB4151B29EB3400DFB093 /* iThere */ = {
 			isa = PBXGroup;
 			children = (
+				CA0DC77E1B2B8D7000431078 /* BeaconTableViewCell.swift */,
 				CA0DC77A1B2B872800431078 /* DetailsViewController.swift */,
+				CAA2445F1B2BD877008FA22E /* MemberService.swift */,
 				CA3BB4181B29EB3400DFB093 /* AppDelegate.swift */,
 				CA3BB41C1B29EB3400DFB093 /* Main.storyboard */,
+				CA0DC77C1B2B8C7C00431078 /* BeaconListViewController.swift */,
 				CA0DC7761B2B83E300431078 /* BeaconInfo.swift */,
+				CAA2445D1B2BD764008FA22E /* Member.swift */,
 				CA3BB41F1B29EB3400DFB093 /* Images.xcassets */,
 				CA3BB4211B29EB3400DFB093 /* LaunchScreen.xib */,
 				CA3BB4161B29EB3400DFB093 /* Supporting Files */,
-				CA0DC7741B2B839C00431078 /* BeaconTableViewController.swift */,
+				CAA244901B2C9BC6008FA22E /* BluetoothScanner.swift */,
 			);
 			path = iThere;
 			sourceTree = "<group>";
@@ -219,8 +234,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3BB4191B29EB3400DFB093 /* AppDelegate.swift in Sources */,
-				CA0DC7751B2B839C00431078 /* BeaconTableViewController.swift in Sources */,
+				CAA244911B2C9BC6008FA22E /* BluetoothScanner.swift in Sources */,
+				CAA2445E1B2BD764008FA22E /* Member.swift in Sources */,
+				CA0DC77F1B2B8D7000431078 /* BeaconTableViewCell.swift in Sources */,
+				CAA244601B2BD877008FA22E /* MemberService.swift in Sources */,
+				CAA244931B2DB8AF008FA22E /* BeaconTableViewController.swift in Sources */,
 				CA0DC7771B2B83E300431078 /* BeaconInfo.swift in Sources */,
+				CA0DC77D1B2B8C7C00431078 /* BeaconListViewController.swift in Sources */,
 				CA0DC77B1B2B872800431078 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
